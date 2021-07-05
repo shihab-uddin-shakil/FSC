@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var tp = ViewBag.tprofit;
+    var tb = ViewBag.tbuye;
+    var ts = ViewBag.tsold;
+    var ta = ViewBag.tavilable;
+    var dtd = ViewBag.dtprofit;
+}
+
+<h2>Dashboard</h2>
+<div class="card-group">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Total Profit</h5>
+            <p class="card-text">@tp</p>
+            <p class="card-text"><small class="text-muted">taka</small></p>
+        </div>
+    </div>
+    <div class="card">
+
+        <div class="card-body">
+            <h5 class="card-title">Total Sell</h5>
+            <p class="card-text">@ts</p>
+            <p class="card-text"><small class="text-muted">taka</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Total Buy</h5>
+            <p class="card-text">@tb</p>
+            <p class="card-text"><small class="text-muted">taka</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Total Stored</h5>
+            <p class="card-text">@ta</p>
+            <p class="card-text"><small class="text-muted">taka</small></p>
+        </div>
+    </div>
+</div>
+
+<form method="post">
+    <label for="form">Form:</label>
+    <input type="date" id="form" name="form">
+    <label for="form">To:</label>
+    <input type="date" id="form" name="form">
+    <input type="submit" value="Search" name="submit">
+
+
+</form>
+<h1>@dtd</h1>
+
+

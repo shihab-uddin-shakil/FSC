@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="de297930e0774fd2b269c257d0d959d9" Name="Diagram1">
+        <EntityTypeShape EntityType="MFCSModel.Buy_Products" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCSModel.Complain" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCSModel.Product_Type" Width="1.5" PointX="5.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCSModel.Product" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCSModel.Sell_Products" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCSModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCSModel.Transaction" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCSModel.User" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="MFCSModel.FK_Buy_Products_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="MFCSModel.FK_Complain_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="MFCSModel.FK_Products_Product_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="MFCSModel.FK_Sell_Products_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="MFCSModel.FK_Transaction_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

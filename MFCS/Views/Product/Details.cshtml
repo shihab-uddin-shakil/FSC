@@ -1,0 +1,58 @@
+﻿@model MFCS.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Buying_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Buying_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Selling_price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Selling_price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stored)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stored)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

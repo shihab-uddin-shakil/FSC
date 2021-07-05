@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MFCSModel1StoreContainer" CdmEntityContainer="MFCSEntities1">
+    <EntitySetMapping Name="AllReports">
+      <EntityTypeMapping TypeName="MFCSModel1.AllReport">
+        <MappingFragment StoreEntitySet="AllReports">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="PName" ColumnName="PName" />
+          <ScalarProperty Name="SellQuantity" ColumnName="SellQuantity" />
+          <ScalarProperty Name="BuyeQuantity" ColumnName="BuyeQuantity" />
+          <ScalarProperty Name="SellPrice" ColumnName="SellPrice" />
+          <ScalarProperty Name="BuyePrice" ColumnName="BuyePrice" />
+          <ScalarProperty Name="Profit" ColumnName="Profit" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReplyComplains">
+      <EntityTypeMapping TypeName="MFCSModel1.ReplyComplain">
+        <MappingFragment StoreEntitySet="ReplyComplain">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="C_Id" ColumnName="C_Id" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

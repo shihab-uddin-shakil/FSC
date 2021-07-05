@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MFCSModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AllReports">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category" Type="varchar" MaxLength="50" />
+    <Property Name="PName" Type="varchar" MaxLength="50" />
+    <Property Name="SellQuantity" Type="int" />
+    <Property Name="BuyeQuantity" Type="int" />
+    <Property Name="SellPrice" Type="int" />
+    <Property Name="BuyePrice" Type="int" />
+    <Property Name="Profit" Type="int" />
+    <Property Name="Date" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ReplyComplain">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C_Id" Type="int" Nullable="false" />
+    <Property Name="Message" Type="varchar" MaxLength="5000" />
+  </EntityType>
+  <EntityContainer Name="MFCSModel1StoreContainer">
+    <EntitySet Name="AllReports" EntityType="Self.AllReports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReplyComplain" EntityType="Self.ReplyComplain" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
